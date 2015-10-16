@@ -13,11 +13,11 @@ de:
         state: Bundesland
         zipcode: PLZ
       spree/calculator/tiered_flat_rate:
-        preferred_base_amount:
-        preferred_tiers:
+        preferred_base_amount: Basisbetrag
+        preferred_tiers: Stufen
       spree/calculator/tiered_percent:
-        preferred_base_percent:
-        preferred_tiers:
+        preferred_base_percent: Basisprozent
+        preferred_tiers: Stufen
       spree/country:
         iso: ISO
         iso3: ISO3
@@ -25,7 +25,7 @@ de:
         name: Name
         numcode: ISO-Nummer
       spree/credit_card:
-        base:
+        base: Basis
         cc_type: Typ
         month: Monat
         name: Name
@@ -73,7 +73,7 @@ de:
         zipcode: LIeferadresse Postleitzahl
       spree/payment:
         amount: Betrag
-        number:
+        number: Nummer
       spree/payment_method:
         name: Name
       spree/product:
@@ -81,7 +81,7 @@ de:
         cost_currency: Kostenwährung
         cost_price: Einkaufspreis
         description: Beschreibung
-        discontinue_on:
+        discontinue_on: Eingestellt Am
         master_price: Nettopreis
         name: Name
         on_hand: verfügbar
@@ -109,7 +109,7 @@ de:
       spree/role:
         name: Name
       spree/shipment:
-        number:
+        number: Nummer
       spree/state:
         abbr: Abkürzung
         name: Name
@@ -188,7 +188,7 @@ de:
         spree/product:
           attributes:
             base:
-              cannot_destroy_if_attached_to_line_items:
+              cannot_destroy_if_attached_to_line_items: Produkte können nicht gelöscht werden wenn sie in einem Einzelposten sind
         spree/refund:
           attributes:
             amount:
@@ -210,7 +210,7 @@ de:
         spree/variant:
           attributes:
             base:
-              cannot_destroy_if_attached_to_line_items:
+              cannot_destroy_if_attached_to_line_items: Variante kann nicht gelöscht werden wenn sie zu einem Einzelposten gehört
     models:
       spree/address:
         one: Adresse
@@ -375,7 +375,7 @@ de:
   number:
     percentage:
       format:
-        precision:
+        precision: '1'
   spree:
     abbreviation: Abkürzung
     accept: Akzeptieren
@@ -387,10 +387,10 @@ de:
     action: Aktion
     actions:
       actions:
-        cancel:
-        destroy:
-        edit:
-        save:
+        cancel: Abbrechen
+        destroy: Zerstören
+        edit: Bearbeiten
+        save: Speichern
       cancel: abbrechen
       continue: Weiter
       create: erstellen
@@ -429,8 +429,8 @@ de:
     adjustment_amount: Betrag
     adjustment_labels:
       tax_rates:
-        excluding_tax:
-        including_tax:
+        excluding_tax: "%{name}%{amount}"
+        including_tax: "%{name}%{amount} (Im Preis enthalten)"
     adjustment_successfully_closed: Anpassung wurde erfolgreich geschlossen!
     adjustment_successfully_opened: Anpassung wurde erfolgreich geöffnet!
     adjustment_total: Anpassungen Gesamt
@@ -441,7 +441,7 @@ de:
           admin:
             order:
               events:
-                resend:
+                resend: Erneut senden
           approve: freigeben
           cancel: stornieren
           resend: Neu senden
@@ -452,7 +452,7 @@ de:
         orders: Bestellungen
         overview: "Übersicht"
         products: Produkte
-        promotion_categories:
+        promotion_categories: Aktion Kategorien
         promotions: Aktion
         properties: Eigenschaften
         prototypes: Prototypen
@@ -465,7 +465,7 @@ de:
         addresses: Adressen
         admin:
           user:
-            order_num:
+            order_num: Bestellungsnummer
         items: Artikel
         items_purchased: Gekaufte Artikel
         order_history: Bestellhistorie
@@ -498,25 +498,25 @@ de:
     and: und
     api:
       api:
-        access:
-        clear_key:
-        generate_key:
-        key:
-        no_key:
-        regenerate_key:
-      key_cleared:
-      key_generated:
+        access: Zugang
+        clear_key: Schlüssel löschen
+        generate_key: Schlüssel generieren
+        key: Schlüssel
+        no_key: Kein Schlüssel
+        regenerate_key: Schlüssel neu generieren
+      key_cleared: Schlüssel gelöscht
+      key_generated: Schlüssel generiert
     approve: Zustimmen
     approved_at: Zugestimmt am
     approver: Zustimmer
     are_you_sure: Sind Sie sicher
     are_you_sure_delete: Sind sie sich sicher, dass Sie diesen Eintrag löschen möchten?
     associated_adjustment_closed: Die verknüpfte Anpassung ist geschlossen und wird nicht neu berechnet. Möchten Sie die Anpassung öffnen?
-    at_symbol: "@"
+    at_symbol: "x"
     authorization_failure: Bitte authentifizieren Sie sich.
     authorized: Autorisiert
     auto_capture: automatische Erfassung
-    available:
+    available: Verfügbar
     available_on: erhältlich ab
     average_order_value: Durchschnittsbestellwert
     avs_response: Ergebnis der Adressprüfung
@@ -525,8 +525,8 @@ de:
     back_to_payment: Zurück zur Zahlung
     back_to_resource_list: Zurück zur Bestellliste
     back_to_rma_reason_list: Zurück zur Rücksendeliste
-    back_to_stock_locations_list:
-    back_to_stock_movements_list:
+    back_to_stock_locations_list: Zurück zur Lagerstandort Liste
+    back_to_stock_movements_list: Zurück zur Bestandsführung Liste
     back_to_store: Zurück zum Shop
     back_to_users_list: Zurück zur Benutzerliste
     backorder: Nachlieferung
@@ -550,11 +550,11 @@ de:
     cannot_create_customer_returns: Kann Rücksendung nicht durchführen.
     cannot_create_payment_without_payment_methods: Sie können keine Zahlung für eine Bestellung anlegen, ohne vorher eine Zahlungsmethode definiert zu haben.
     cannot_create_returns: Sie können diese Bestellung nicht zurückgeben, da sie noch nicht versendet wurde.
-    cannot_destroy_if_attached_to_line_items:
+    cannot_destroy_if_attached_to_line_items: Kann nicht gelöscht werden wenn es zu einem Einzelposten gehört
     cannot_perform_operation: Kann diese Operation nicht durchführen.
     cannot_set_shipping_method_without_address: Die Versandart kann erst geändert werden, wenn die Kundendaten ausgefüllt sind.
     capture: erfassen
-    capture_events:
+    capture_events: Event erfassen
     card_code: Kartenprüfnummer
     card_number: Kartennummer
     card_type: Kartentyp
@@ -620,7 +620,7 @@ de:
     create_reimbursement: Vergütung beantragen
     created_at: Erstellt am
     credit: Guthaben
-    credit_allowed:
+    credit_allowed: Kredit erlaubt
     credit_card: Kreditkarte
     credit_cards: Kreditkarten
     credit_owed: Betrag ausstehend
@@ -654,8 +654,8 @@ de:
     date_completed: Abschlußdatum
     date_picker:
       date_picker:
-        first_day:
-        js_format:
+        first_day: Erster Tag
+        js_format: Js Format
       first_day: 0
       format: "%d.%m.%Y"
       js_format: dd.mm.yy
@@ -665,8 +665,8 @@ de:
     default_tax: Standard Steuer
     default_tax_zone: Standard Steuergebiet
     delete: Löschen
-    delete_from_taxon:
-    deleted:
+    delete_from_taxon: Von Klassifikation löschen
+    deleted: Gelöscht
     deleted_variants_present: In dieser Bestellung sind Artikel enhalten welche nicht länger verfügbar sind.
     delivery: Versand
     depth: Tiefe
@@ -674,15 +674,15 @@ de:
     destination: Ziel
     destroy: Entfernen
     details: Details
-    discontinue_on:
-    discontinued:
+    discontinue_on: Eingestellt am
+    discontinued: Eingestellt
     discount_amount: Skonto
     dismiss_banner: Nein. Danke! Ich bin nicht interessiert, bitte diese Nachricht nicht erneut anzeigen.
     display: Angezeigter Wert
     display_currency: Währung anzeigen
     doesnt_track_inventory: Bestandsverfolgung ist deaktiviert
     edit: Bearbeiten
-    edit_reimbursement:
+    edit_reimbursement: Erstattung bearbeiten
     editing_resource: Eintrag bearbeiten
     editing_rma_reason: Rückgabebewilligungsgrund bearbeiten
     editing_user: Benutzer bearbeiten
@@ -709,10 +709,10 @@ de:
     ending_in: Ending in
     environment: Umgebung
     error: Fehler
-    error_user_destroy_with_orders:
+    error_user_destroy_with_orders: Fehler Benutzer gelöscht mit Bestellungen
     errors:
       messages:
-        blank:
+        blank: Leer
         could_not_create_taxon: Konnte die Produktklasse nicht erstellen
         no_payment_methods_available: Für diese Umgebung wurden keine Zahlungsmethoden definiert
         no_shipping_methods_available: Für diese Region sind keine Versandart verfügbar. Bitte wählen Sie eine anderen Region aus.
@@ -774,19 +774,19 @@ de:
     home: Home
     i18n:
       available_locales: Verfügbare Locales
-      fields:
+      fields: Felder
       language: Sprache
       localization_settings: Lokalisierungseinstellungen
-      only_complete:
-      only_incomplete:
-      select_locale:
-      show_only:
-      supported_locales:
+      only_complete: Nur Vollständig
+      only_incomplete: Nur Unvollständig
+      select_locale: Locale Auswählen
+      show_only: Nur Anzeigen
+      supported_locales: Unterstützte Locales
       this_file_language: Deutsch (DE)
-      translations:
+      translations: Übersetzungen
     icon: Symbol
-    id:
-    identifier: id
+    id: ID
+    identifier: ID
     image: Bild
     images: Bilder
     implement_eligible_for_return: 'Für den EligibilityValidator muss #eligible_for_return? implementiert sein.'
@@ -832,8 +832,8 @@ de:
     items_to_be_reimbursed: Zu vergütende Artikel
     jirafe: Jirafe
     landing_page_rule:
-      must_have_visited_path:
-      path: Path
+      must_have_visited_path: Muss benutzen Pfad haben
+      path: Pfad
     last_name: Nachname
     last_name_begins_with: Nachname beginnt mit
     learn_more: Mehr dazu
@@ -841,9 +841,9 @@ de:
     line_item_adjustments: Anpassungen Bestellposten
     list: Liste
     loading: Laden
-    loading_tree:
+    loading_tree: Loading tree. Please wait…
     locale_changed: Sprache geändert
-    locale_not_changed:
+    locale_not_changed: Locale wurde nicht geändert
     location: Standort
     lock: Sperren
     log_entries: Logeinträge
@@ -874,11 +874,11 @@ de:
     meta_title: Meta-Titel
     metadata: Metadaten
     minimal_amount: Mindestanzahl
-    missing_return_authorization:
+    missing_return_authorization: Fehlende Rückerstattungserlaubniss %{item_name}.
     month: Monat
     more: Mehr
     move_stock_between_locations: Lager zwischen Standorten bewegen
-    move_variant_to:
+    move_variant_to: Variante verschieben
     my_account: Mein Konto
     my_orders: Meine Bestellungen
     name: Name
@@ -922,7 +922,7 @@ de:
     new_zone: Neues Gebiet
     next: weiter
     no_actions_added: Keine Aktionen hinzugefügt
-    no_available_date_set:
+    no_available_date_set: Verfügbarkeitsdatum nicht vorhanden
     no_payment_found: Keine Zahlung gefunden
     no_pending_payments: Keine ausstehenden Zahlungen
     no_products_found: Keine Produkte gefunden
@@ -949,7 +949,7 @@ de:
       variant_deleted: Variante wurde gelöscht
       variant_not_deleted: Variante konnte nicht gelöscht werden
     num_orders: Anzahl Bestellungen
-    number:
+    number: Nummer
     on_hand: Auf Lager
     open: "Öffnen"
     open_all_adjustments: Alle Anpassungen öffnen
@@ -969,7 +969,7 @@ de:
     order_canceled: Bestellung storniert
     order_details: Details der Bestellung
     order_email_resent: Bestellbestätigung erneut versendet
-    order_has_no_payments:
+    order_has_no_payments: Bestellung hat keine Bezahlungen
     order_information: Bestellinformationen
     order_line_items: Bestellposten
     order_mailer:
@@ -1023,7 +1023,7 @@ de:
     path: Pfad
     pay: bezahlen
     payment: Zahlung
-    payment_amount:
+    payment_amount: Bezahlbetrag
     payment_could_not_be_created: Zahlung konnte nicht erstellt werden.
     payment_identifier: ZahlungsID
     payment_information: Zahlungsinformationen
@@ -1046,16 +1046,16 @@ de:
       void: nichtig
     payment_updated: Zahlung aktualisiert
     payments: Zahlungen
-    payments_count:
+    payments_count: Bezahl Anzahl
     pending: Ausstehend
-    pending_sale:
+    pending_sale: anstehender Verkauf
     percent: Prozent
     percent_per_item: Prozent pro Artikel
     permalink: Permalink
     phone: Telefon
     place_order: Bestellung ausführen
     please_define_payment_methods: Bitte definieren Sie zuerst mindestens eine Zahlungsmethode.
-    please_enter_reasonable_quantity:
+    please_enter_reasonable_quantity: Bitte geben Sie eine zumutbare Menge ein
     populate_get_error: Da ist etwas schief gelaufen. Bitte versuchen sie den Artikel erneut in den Warenkob zu tun.
     powered_by: Unterstützt von
     pre_tax_amount: Vorsteuer Zwischensumme
@@ -1100,12 +1100,12 @@ de:
         description: Die Lieferungen dieser Bestellung von Versandkosten befreien
         name: Versandkostenfrei
     promotion_actions: Aktionen
-    promotion_category:
+    promotion_category: Werbeaktion Kategorie
     promotion_form:
       match_policies:
         all: Alle Regeln müssen greifen
         any: Eine dieser Regeln muss greifen
-    promotion_label:
+    promotion_label: Werbeaktion (%{name})
     promotion_rule: Werbeaktions-Regel
     promotion_rule_types:
       first_order:
@@ -1157,7 +1157,7 @@ de:
     received: erhalten
     reception_status: Empfangsstatus
     reference: Referenz
-    reference_contains:
+    reference_contains: Referenz beinhaltet
     refund: Rückerstattung
     refund_amount_must_be_greater_than_zero: Rückerstattung muss größer 0 sein
     refund_reasons: Rückerstattungsgründe
@@ -1191,8 +1191,8 @@ de:
     rename: Rename
     report: Bericht
     reports: Berichte
-    resellable:
-    resend:
+    resellable: Wiederverkäuflich
+    resend: Erneut Versenden
     reset_password: Mein Passwort zurücksetzen
     response_code: Rückgabewert
     resume: Fortsetzen
@@ -1204,7 +1204,7 @@ de:
     return_authorizations: Rückgabebewilligungen
     return_item_inventory_unit_ineligible: Artikelposition des Warenkorbs von der Rückgabe ausgeschlossen
     return_item_inventory_unit_reimbursed: Artikelposition des Warenkorbs durch Rücksendung vergütet
-    return_item_order_not_completed:
+    return_item_order_not_completed: Die Bestellung des Rückgabe Artikels muss abgeschlossen werden
     return_item_rma_ineligible: Rückgabe des Artikels ausgeschlossen
     return_item_time_period_ineligible: Rückgabe des Artikels zeitlich ausgeschlossen
     return_items: Rücksendeartikel
@@ -1242,7 +1242,7 @@ de:
     select_a_stock_location: Lager wählen
     select_from_prototype: Von einem Prototypen
     select_stock: Lager wählen
-    selected_quantity_not_available:
+    selected_quantity_not_available: ausgewählte %{item} ist nicht verfügbar.
     send_copy_of_all_mails_to: Schicke eine Kopie aller E-Mails an
     send_mails_as: Schicke E-Mail als
     server: Server
@@ -1289,15 +1289,15 @@ de:
     shipping_price_sack: Preis füllen
     shipping_rates:
       display_price:
-        excluding_tax:
-        including_tax:
+        excluding_tax: "%{price} (+ %{tax_amount} %{tax_rate_name})"
+        including_tax: "%{price} (inkl. %{tax_amount} %{tax_rate_name})"
     shipping_total: Lieferkosten gesamt
     shop_by_taxonomy: Nach %{taxonomy} filtern
     shopping_cart: Warenkorb
     show: Anzeigen
     show_active: Aktive anzeigen
     show_deleted: Gelöschte anzeigen
-    show_discontinued:
+    show_discontinued: Eingestellte Anzeigen
     show_only_complete_orders: Nur abgeschlossene Bestellungen anzeigen
     show_only_considered_risky: Nur riskante Bestellungen anzeigen
     show_rate_in_label: Zeige Steuer im Label
@@ -1349,12 +1349,12 @@ de:
     states_required: Bundesland erforderlich
     status: Status
     stock: Lager
-    stock_item:
-    stock_item_id:
+    stock_item: Lagerartikel
+    stock_item_id: Lagerartikel ID
     stock_location: Lagerstandort
     stock_location_info: Lagerstandort Info
     stock_locations: Lagerstandorte
-    stock_locations_need_a_default_country:
+    stock_locations_need_a_default_country: Sie müssen erst ein standard Land einrichten bevor sie einen Lagerstandort erstellen können
     stock_management: Lagerverwaltung
     stock_management_requires_a_stock_location: Bitte erstellen Sie einen Lagerstandort um das Lager zu verwalten.
     stock_movements: Lagerbewegungen
@@ -1423,7 +1423,7 @@ de:
     tracking_number: Tracking Nummer
     tracking_url: Tracking URL
     tracking_url_placeholder: z.B. http://schnellepost.net/paket?num=:tracking
-    transaction_id:
+    transaction_id: Transaktion ID
     transfer_from_location: Transferformular
     transfer_stock: Transferlager
     transfer_to_location: Transferieren zu
@@ -1441,9 +1441,9 @@ de:
     usage_limit: Nutzungsbeschränkung
     use_app_default: App-Standard verwenden
     use_billing_address: Rechnungsadresse verwenden
-    use_existing_cc:
+    use_existing_cc: Eine gespeicherte Karte wiederverwenden
     use_new_cc: Eine neue Karte verwenden
-    use_new_cc_or_payment_method:
+    use_new_cc_or_payment_method: Eine neue Karte benutzen / oder Zahlungsmethode
     use_s3: Benutze Amazon S3 für Bilder
     user: Benutzer
     user_rule:
